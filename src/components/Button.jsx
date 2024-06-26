@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import ButtonSvg from '../assets/svg/ButtonSvg';
 
 function Button({ className, href, onClick, children, px, white }) {
@@ -23,5 +24,14 @@ function Button({ className, href, onClick, children, px, white }) {
 
     return href ? renderLink() : renderButton();
 }
+
+Button.propTypes = {
+    className: PropTypes.string,
+    href: PropTypes.string,
+    onClick: PropTypes.func,
+    children: PropTypes.node,
+    px: PropTypes.string,
+    white: PropTypes.bool,
+};
 
 export default Button;

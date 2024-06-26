@@ -6,8 +6,8 @@ const Section = ({ className, id, crosses, crossesOffset, customPaddings, childr
         <div
             id={id}
             className={`relative ${
-                customPaddings || `py-10 lg:py-16 xl:py-20 ${crosses ? 'lg:py-32 xl:py-40' : ''} ${className} || ""`
-            }`}
+                customPaddings || `py-10 lg:py-16 xl:py-20 ${crosses ? 'lg:py-32 xl:py-40' : ''}`
+            } ${className} || ""}`}
         >
             {children}
             <div className="hidden absolute top-0 left-5 w-0.25 h-full bg-stroke-1 pointer-events-none md:block lg:left-7.5 xl:left-10" />
@@ -32,7 +32,7 @@ Section.propTypes = {
     id: PropTypes.string,
     crosses: PropTypes.bool,
     crossesOffset: PropTypes.string,
-    customPaddings: PropTypes.string,
+    customPaddings: PropTypes.bool,
     children: PropTypes.node,
 };
 
