@@ -4,10 +4,11 @@ import Hero from './components/Hero';
 import Benefits from './components/Benefits';
 import Collaboration from './components/Collaboration';
 import Services from './components/Services';
-
-import './App.css';
 import Pricing from './components/Pricing';
 import Roadmap from './components/Roadmap';
+import Footer from './components/Footer';
+
+import './App.css';
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
                 <Services />
                 <Pricing />
                 <Roadmap />
+                <Footer />
             </div>
             <ButtonGradient />
         </>
